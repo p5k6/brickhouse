@@ -137,6 +137,28 @@
 			   </executions>
 			 </plugin>
 			 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <artifactSet>
+            <includes>
+              <include>com.google.guava:guava</include>
+              <include>joda-time:joda-time</include>
+              <include>com.clearspring.analytics:stream</include>
+            </includes>
+          </artifactSet>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
 		</plugins>
 	</build>
 
