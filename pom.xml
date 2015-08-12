@@ -44,6 +44,7 @@
        <apache.hbase.version>0.92.1</apache.hbase.version>
      <apache.hive.version>0.10.0</apache.hive.version>
      <codehaus.jackson.version>1.9.2</codehaus.jackson.version>
+     <additionalparam>-Xdoclint:none</additionalparam>
   </properties>
 
   <build>
